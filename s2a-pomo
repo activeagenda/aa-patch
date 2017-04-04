@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Merge *.po AA files and produce finall *.mo file
+
+cd /var/www/s2a/active_agenda/lang/$1/LC_MESSAGES
+shopt -s extglob
+msgcat --use-first active_agenda.base.$1.po !(active_agenda|active_agenda.base.*).po | msgattrib --no-fuzzy -o active_agenda.po
+msgfmt active_agenda.po -o active_agenda.mo

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+AA_PATH=/var/www/s2a 
+
+# Reloding sandbox for users
+
+# Purge the sandbox database:
+mysql --user=$1 --password=$2 activeagenda << EOF
+delete from bcti;
+delete from bsta;
+delete from bctr;
+EOF
+
+# Load fresh data for new games....
+php $AA_PATH/s2a-import-data.php -f $AA_PATH/install/master/bctr_pl.csv -m bctr -a 
+php $AA_PATH/s2a-import-data.php -f $AA_PATH/install/master/bsta_pl.csv -m bsta -a 
+php $AA_PATH/s2a-import-data.php -f $AA_PATH/install/master/bcti_pl.csv -m bcti -a 

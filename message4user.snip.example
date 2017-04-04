@@ -1,0 +1,9 @@
+<?php echo '<p align="center"><div style="width:300px;background-color:#2461aa;color:white;margin:0 auto 1em auto;padding:1em 1em 0 1em;border:3px solid #cedcf1">
+<!-- START -->
+
+    <b>To enter, please use the following:</b><br />
+	Username: <b>demo</b><br />
+	Password: <b>visitor</b><p style="font-size: x-small;border-top:1px solid #cedcf1;color:#cedcf1">Demo last updated: 2010-09-09 18:21 (svn r1870)<br /><a style="color:white" href="http://activeagenda.svn.sourceforge.net/viewvc/activeagenda/trunk/?view=log">Full revision log</a></p>
+
+<!-- END -->
+</div></p>'; ?>

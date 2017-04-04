@@ -1,0 +1,14 @@
+/**
+ * modifications to main CSS rules in order to accommodate behavoiur of mobile devices
+ * 
+ **/
+
+.fval:hover {
+    background-color: #f2ffe5;
+}
+
+
+.lrw:hover td {
+	background-color: #f2ffe5;
+}
+

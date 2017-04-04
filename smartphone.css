@@ -1,0 +1,15 @@
+/**
+ * modifications to main CSS rules in order to accommodate behavoiur of a smartphone
+ * 
+ **/
+#sidearea {
+	display: none;
+}
+
+div.listwrap {
+	margin: 0 12px 0 6px;
+}
+
+#navi_trim {
+	min-width: inherit;
+}

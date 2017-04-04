@@ -1,0 +1,129 @@
+/**
+ * Documentation CSS rules for the aa_theme theme
+ *
+ * LICENSE NOTE:
+ *
+ * Copyright  2003-2009 Active Agenda Inc., All Rights Reserved.
+ *
+ * Unless explicitly acquired and licensed from Licensor under another license, the
+ * contents of this file are subject to the Reciprocal Public License ("RPL")
+ * Version 1.5, or subsequent versions as allowed by the RPL, and You may not copy
+ * or use this file in either source code or executable form, except in compliance
+ * with the terms and conditions of the RPL. You may obtain a copy of the RPL from
+ * Active Agenda Inc. at http://www.activeagenda.net/license.
+ *
+ * All software distributed under the RPL is provided strictly on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND LICENSOR HEREBY
+ * DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR
+ * NON-INFRINGEMENT. See the RPL for specific language governing rights and
+ * limitations under the RPL.
+ *
+ * author         Mattias Thorslund <mthorslund@activeagenda.net>
+ * copyright      2003-2009 Active Agenda Inc.
+ * license        http://www.activeagenda.net/license
+ **/
+
+body {
+    text-align:justify;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align:left;
+    margin: 0 0 0 6px;
+    padding: 0;
+    page-break-after: avoid;
+}
+
+h1 {
+    border: none;
+    background-color:transparent;
+    padding-top: 12px;
+}
+
+h3 {
+    font-weight:bold;
+    font-style:italic;
+    font-size:1.2em;
+}
+
+p {
+    margin: 0 6px;
+    widows: 4;
+    orphans: 4;
+}
+
+strong {
+    font-weight:bold;
+    font-style:italic;
+}
+
+em {
+    background-color: #ffff99;
+    padding: .1em;
+}
+
+pre {
+    background-color:#cedcf1;
+    margin: 0;
+    padding: 0 1em;
+    font-size:0.8em;
+}
+
+div.toc {
+    background-color: #f6f6f6;
+    float: right;
+    clear: right;
+    padding: 0.5em;
+    margin: 8px 6px 30px 20px;
+
+    border: 2px solid #2461aa;
+    text-align: left;
+    width: 150px;
+}
+
+table {
+    border-top: 1px #f6f6f6 solid; 
+    border-left: 1px #f6f6f6 solid; 
+    border-right: 1px #98AAB1 solid; 
+    border-bottom: 1px #98AAB1 solid; 
+    background-color: transparent;
+    margin: 0 6px;
+    border-spacing: 1px;
+}
+
+td {
+    background-color: #f6f6f6;
+    padding: 0.5em 1em;
+}
+
+th {
+    background-color: #dddddd;
+    font-weight:bold;
+}
+
+td.name {
+    font-weight:bold;
+}
+
+td.blank {
+    background-color:#ffffff;
+    font-size:1px;
+    line-height:1px;
+    padding: 0;
+}
+
+td.descr { 
+    font-style:italic;
+}
+
+.tabclear {
+    float: right;
+    clear: right;
+    display:block;
+}
+
+#editorial {
+    margin: 0 200px 0 30px;
+}

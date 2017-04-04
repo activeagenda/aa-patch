@@ -1,0 +1,102 @@
+/**
+ * Customized styles for the MenuG5 menu
+ */
+
+.itemTopOn, .itemTopOff {
+    width: 90px;
+    height: 50px;
+    font: bold 6px "Verdana", "Helvetica", "Arial", sans-serif;
+    background: transparent url('img/transparent.gif') left top repeat; /*for IE*/
+}
+
+
+.itemSubOff, .itemSubOn, .itemCatOff, .itemCatOn {
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #ffffff;
+    text-align: left;
+    width:180px;
+    padding:1px 6px 1px 11px;
+    background-color: #4384c5;
+}
+
+.itemSubOff {
+    background-image: url('img/transparent.gif');
+}
+.itemSubOn {
+    cursor: pointer;
+    background-color: #599df0;
+    background-image: url('img/transparent.gif');
+}
+
+.itemCatOff {
+    background-color: #4991d9;
+    background-image: url('img/transparent.gif');
+}
+.itemCatOn {
+    cursor: e-resize;
+    background-color: #599df0;
+    background-image: url('img/transparent.gif');
+}
+
+
+.itemTitle { 
+    cursor:default;
+    width:180px;
+    padding:1px;
+    border:1px solid #ffffff;
+    text-align:center;
+
+}
+
+.fontOff, .fontOn, .fontCatOff , .fontCatOn {
+    font-family:Verdana, Helvetica, Arial, sans-serif;
+    font-size:13px;
+    text-decoration: none;
+}
+
+.fontOff {
+    color: #ffffff;
+}
+.fontOn {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.fontCatOff {
+    color: #ffffff;
+}
+.fontCatOn {
+   color: #ffffff;
+}
+
+.fontTitle { 
+    font-family:Verdana, Helvetica, Arial, sans-serif;
+    font-size:13px;
+    color: #ffffff;
+}
+
+.tagOff { 
+    width:8px; 
+    height:13px; 
+    float:right; 
+    background:url("img/mnuright.gif") no-repeat bottom; 
+}
+.tagOn { 
+    width:8px; 
+    height:13px; 
+    float:right; 
+    background:url("img/mnuright_o.gif") no-repeat bottom; 
+}
+
+.tagDownOff { 
+    width:20px; 
+    height:10px; 
+    float:right; 
+    background:url("img/mnuright.gif") no-repeat bottom left;
+}
+.tagDownOn { 
+    width:20px; 
+    height:10px; 
+    float:right; 
+    background:url("img/mnuright_o.gif") no-repeat bottom left;
+}

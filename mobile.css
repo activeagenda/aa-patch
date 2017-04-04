@@ -1,0 +1,112 @@
+/**
+ * modifications to main CSS rules in order to accommodate behavoiur of mobile devices
+ * 
+ **/
+
+th.l{
+	font-size: 13px;
+}
+
+body, p, td, th, .normal { 
+	font-size: 16px;
+	font-family: Arial;
+}
+
+body{
+	margin: 0px;
+}
+table.list tr td { 
+	padding: 20px 10px 20px 10px; 
+}
+
+td.l{
+	font-size: 14px;
+	font-family: Arial;	
+}
+
+td.l2{
+	font-size: 14px;
+	font-family: Arial;	
+}
+
+td.l3, div.l3{
+	font-size: 14px;
+	font-family: Arial;	
+}
+
+.flbl, .flblr, .flblh, .flblw, .flbp {
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+}
+
+#navi_area {
+	font-size: 16px;
+	border-width: 0px;
+}
+
+
+#navi_area li {
+	margin: 0.6em 0.5em 0.2em 0.5em;
+}
+
+#navi_area>li {
+	font-size: 16px; 
+	margin: 4em 0.5em 0.2em 0.5em;
+}
+
+.fval {
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+}
+
+.mactn1 {
+	height: 22px;
+}
+
+.mactn2 {
+	display: none;	
+}
+
+.mactn3 {	
+	margin-left:15px;
+	margin-top: 15px;
+}
+
+#srchFrm{
+	padding-left:5px;
+}
+
+#srchHstCont{	
+    margin-left: 5px;
+}
+
+#arrowRight{
+	margin-left:20px;
+}
+
+#arrowLeft{
+	margin-right:20px;
+}
+
+.edt, .edta, .edts, .edtl, .edtp, .edtc { 
+	font-size: 15px;
+	font-family: Arial;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	cursor: pointer;
+	margin-top:10px;
+	margin-bottom: 10px;	
+}
+
+#sidearea {
+	display: none;
+}
+
+div.listwrap {
+	margin: 0 12px 0 6px;
+}
+
+#navi_trim {
+	min-width: inherit;
+}

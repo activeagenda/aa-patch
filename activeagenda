@@ -1,0 +1,6 @@
+# /etc/cron.d/activeagenda: crontab for sending notification out of AA
+# script must be: -rw-r--r-- 1 root root
+# This is not covered by the standard aa permission model
+
+* * * * *  root /var/www/s2a/lib/cron/cron-notifications.php > /dev/null  2>&1
+* * * * *  root /var/www/s2a/lib/cron/cron-reminders.php > /dev/null  2>&1
