@@ -580,19 +580,12 @@ img#tag{
 
 #tabwrapper {
     clear: right;
-    float: right;
-    background: #e2e3e4  url(img/body-bg-y.gif) repeat-y scroll right;
+    float: right;    
     padding: 10px 0 15px 1px;
     width: 155px;
-    border-top-color: #96a2b0;
-    border-left-color: #96a2b0;
-    border-bottom-color: #96a2b0;
-    border-width: 1px 0px 0px 2px;
-    border-style: solid;
-
     position:relative;
     right: -10px;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #tabcontainer {
@@ -625,12 +618,15 @@ div.tabunsel, div.tabsel, div.tabseld, div.tabg, div.tabgd, div.tabunselhi, div.
 }
 
 div.tabsel, div.tabseld {
-    background: #ffffff url('img/tabcorner2.gif') top right no-repeat;
-    width: 158px;
+    background: #ffffff;
+    width: 156px;
     position: relative;
-    margin-left: -3px;
+    margin-left: -5px;
     color: #000000;
     border-bottom: 1px #96a2b0 solid;
+	border-top: 10px #4384c5 solid;
+	border-left: 1px #ebeded solid;
+	border-right: 1px #96a2b0 solid;
 	/* min-height: 30px; */
 }
 
@@ -670,7 +666,7 @@ div.tabb,
 a.tabb,
 a.tabb:visited{
     width: 115px;
-    padding: 20px 2px 20px 25px;
+    padding: 20px 2px 30px 25px;
     display: block;
     color: #ffffff;
     text-decoration: none;
@@ -700,7 +696,7 @@ div.tabgdhi a.tabb:visited
 }
 
 div.tabsel div.tabb, div.tabseld div.tabb {
-    padding: 20px 2px 20px 25px;
+    padding: 20px 2px 40px 25px;
     color: #000000;
 }
 
