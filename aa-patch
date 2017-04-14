@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Updating files for sliding down elements
-# Files are comming from rev 1643
-# For reverting the previous files copy the script to the diff directory and run again
+# Run the script to patch the aa-base.1.0.0
 
 
 AA_PATH=/var/www/s2a
