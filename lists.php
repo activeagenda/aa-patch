@@ -413,7 +413,7 @@ function render($startRow = null, $defaultOrderBys = null)
         case 'list':
         default:
             if( !defined('IS_RPC') || !IS_RPC ){
-                $content = '<div id="list_'.$this->moduleID.'" class="listwrap sz2tabs">' . $content . '</div>';				
+                $content = '<div id="list_'.$this->moduleID.'" class="listwrap">' . $content . '</div>';				
             }
             break;
         }
