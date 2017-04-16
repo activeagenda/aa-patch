@@ -696,11 +696,11 @@ function renderRows($startRow, $orderBys)
             }
         }
 		
-		$markerID = null;
+		$markerID = null; 
 		if( $this->markerRecordID == $rowID){
 			$markerID = 'id="LastVisited"';
 		}
-		
+// Probably for VIEWGRID_ROW markerID should be null		
 		if( isset( $this->fixToolsWidth ) ){
 			$content .= sprintf(
 				VIEWGRID_ROW_FIX,

@@ -615,9 +615,9 @@ define('CHECKGRID_SAVEROW', '<tr>
 
 //view row (no link)
 //parameters: class, rowID, firstcellcontent, content, module ID (for unique element ID)
-define('VIEWGRID_ROW', '<tr %6$s class="lrw">
-    <td class="%1$s" align="center" id="%7$s_loc%5$s%2$s">%3$s</td>
-    %4$s
+define('VIEWGRID_ROW', '<tr %6$s class="lrw"  id="%7$s_loc%5$s%2$s">
+	%4$s
+    <td class="%1$s" align="center">%3$s</td>    
 </tr>');
 define('VIEWGRID_ROW_FIX', '<tr %6$s class="lrw"  oncontextmenu="displayRecordMenu( event, \'%8$s\', 1 ); return false;">
     %4$s
