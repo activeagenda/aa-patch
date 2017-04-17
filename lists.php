@@ -507,7 +507,7 @@ function renderHeaders($orderBys)
     }
 
 	
-    $content = sprintf(GRID_HEADER_ROW, $content);
+    $content = sprintf(GRID_HEADER_ROW, $content, $this->moduleID);
     return $content;
 } //end renderHeaders
 

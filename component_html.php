@@ -521,8 +521,8 @@ define('GRID_NAV_CURRPAGE', '&nbsp;<b>%s</b> |&nbsp;');
 //header strings
 
 //parameters: content
-define('GRID_HEADER_ROW', '<tr>
-    %s
+define('GRID_HEADER_ROW', '<tr id="%2$s_loc0">
+    %1$s
 </tr>');
 define('GRID_HEADER_ROW_EMAIL', '<tr>
     %s
@@ -537,7 +537,7 @@ define('GRID_HEADER_CELL_EMPTY', '<th class="l">&nbsp;</th>');
 define('GRID_HEADER_CELL_EMAIL', '<th class="aa_l">%s</th>');
 
 //gettext("Add New"), $theme_web
-define('EDITGRID_HEADER_CELL_ADDNEW', '<th class="l" id="%3$s_loc0"><a class="lh gaddnju"  href="javascript:editRow(\'0\', \'%3$s\');" title="&nbsp; &nbsp; %1$s &nbsp; &nbsp;"></a></th>');
+define('EDITGRID_HEADER_CELL_ADDNEW', '<th class="l"><a class="lh gaddnju"  href="javascript:editRow(\'0\', \'%3$s\');" title="&nbsp; &nbsp; %1$s &nbsp; &nbsp;"></a></th>');
 
 //gettext("Add New"), $theme_web
 define('EDITGRID_HEADER_CELL_ADDNEW1', '<th class="l"><a class="lh laddnju" href="%s" title="&nbsp; &nbsp; %s &nbsp; &nbsp;"></a></th>');
@@ -545,10 +545,10 @@ define('EDITGRID_HEADER_CELL_ADDNEW1', '<th class="l"><a class="lh laddnju" href
 
 //parameters: class, rowID, actionLink, actionPhrase, actionLink2, actionPhrase2, content
 define('EDITGRID_VIEWROW', '<tr id="row%2$s">
+	%7$s
     <td class="%1$s" id="loc%2$s">
         <a class="l" href="%3$s">%4$s</a>&nbsp;<a class="l" href="%5$s">%6$s</a>
     </td>
-    %7$s
 </tr>');
 
 //parameters: class, rowID, actionLink, actionPhrase, content

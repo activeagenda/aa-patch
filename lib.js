@@ -106,7 +106,7 @@ function editRow( rowID, gridModuleID ){
         }
     }
     editGridGetForm( d, moduleID, submoduleID, rowID );
-    d.style.top = ( findPosY(l)+ 2 )+'px';
+    d.style.top = ( findPosY(l) )+'px';
 	d.style.left = ( findPosX(l) )+'px'; 
 	
 	d.innerHTML = '<img src="themes/aa_theme/img/progress.gif" width="32" height="32">';
