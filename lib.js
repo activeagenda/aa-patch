@@ -106,8 +106,11 @@ function editRow( rowID, gridModuleID ){
         }
     }
     editGridGetForm( d, moduleID, submoduleID, rowID );
-    d.style.top = ( findPosY(l) )+'px';
-	d.style.left = ( findPosX(l) )+'px'; 
+    d.style.top = ( l.offsetHeight+ findPosY(l)+ 2 )+'px';
+    d.style.left = ( l.offsetWidth+ findPosX(l) )+'px';
+    
+	/* d.innerHTML = '<br/>Pobieranie danych z serwera...<br/>';
+    d.style.display = 'block'; */
 	
 	d.innerHTML = '<img src="themes/aa_theme/img/progress.gif" width="32" height="32">';
     d.style.display = 'block';

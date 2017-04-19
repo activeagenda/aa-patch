@@ -507,7 +507,7 @@ function renderHeaders($orderBys)
     }
 
 	
-    $content = sprintf(GRID_HEADER_ROW, $content, $this->moduleID);
+    $content = sprintf(GRID_HEADER_ROW, $content);
     return $content;
 } //end renderHeaders
 
@@ -696,11 +696,11 @@ function renderRows($startRow, $orderBys)
             }
         }
 		
-		$markerID = null; 
+		$markerID = null;
 		if( $this->markerRecordID == $rowID){
 			$markerID = 'id="LastVisited"';
 		}
-// Probably for VIEWGRID_ROW markerID should be null		
+		
 		if( isset( $this->fixToolsWidth ) ){
 			$content .= sprintf(
 				VIEWGRID_ROW_FIX,
