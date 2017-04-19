@@ -450,8 +450,27 @@ function renderHeaders($orderBys)
     $obQS = MakeQS($obArgs);
     $link = $this->pagingLink . ''. $obQS;
 
-	$content = "";
     $fieldNames = array_keys($this->headerPhrases);
+
+    //first header cell is special
+    switch($this->gridType){
+    case 'edit_aqe':
+	case 'edit':	
+        $content = sprintf( EDITGRID_HEADER_CELL_ADDNEW, gettext("Add New"), $theme_web, $this->moduleID );
+        break;
+    case 'edit_nfe':
+    case 'edit_noadd':
+    case 'view':
+    case 'list':
+    default:
+		if( isset( $this->addNewRecord) ){
+			$content = sprintf( EDITGRID_HEADER_CELL_ADDNEW1, $this->addNewRecord, gettext("Add New"), $theme_web );
+		}else{
+			$content = sprintf( GRID_HEADER_CELL, '', '' );
+        }
+		break;
+    }
+
     foreach( $fieldNames as $fieldName ){
         $alignment = '';
         if( isset($this->fieldAlignments[$fieldName]) ){
@@ -486,27 +505,6 @@ function renderHeaders($orderBys)
             }
         }
     }
-	
-	//last header cell is special
-    switch($this->gridType){
-    case 'edit_aqe':
-	case 'edit':	
-        $content .= sprintf( EDITGRID_HEADER_CELL_ADDNEW, gettext("Add New"), $theme_web, $this->moduleID );
-        break;
-    case 'edit_nfe':
-    case 'edit_noadd':
-    case 'view':
-    case 'list':
-    default:
-		if( isset( $this->addNewRecord) ){
-			$content .= sprintf( EDITGRID_HEADER_CELL_ADDNEW1, $this->addNewRecord, gettext("Add New"), $theme_web );
-		}else{
-			$content .= sprintf( GRID_HEADER_CELL, '', '' );
-        }
-		break;
-    }
-
-	
     $content = sprintf(GRID_HEADER_ROW, $content);
     return $content;
 } //end renderHeaders

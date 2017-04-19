@@ -903,7 +903,10 @@ a.l, a.l:VISITED {
 	background-repeat: no-repeat;
     background-position: center;
 	width:80px;
-	height: 30px;	
+	height: 30px;
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;	
 }
 
 .lsgrnvlnk2{
@@ -912,7 +915,10 @@ a.l, a.l:VISITED {
 	background-repeat: no-repeat;
     background-position: center;
 	width:40px;
-	height:30px;	
+	height:30px;
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;
 }
 
 .cnfnddlt{
@@ -921,7 +927,10 @@ a.l, a.l:VISITED {
 	background-repeat: no-repeat;
     background-position: center;
 	width:30px;
-	height:30px;	
+	height:30px;
+    visibility: hidden;	
+	opacity:0;
+    transition:opacity 1s ease;
 }
 
 td.l {
@@ -2517,7 +2526,10 @@ li.pad3NF ul{
 	background-repeat: no-repeat;
     background-position: center;
 	width: 40px;
-	height: 16px;	
+	height: 16px;
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;
 }
 
 .grqckedtd{
@@ -2527,6 +2539,9 @@ li.pad3NF ul{
     background-position: center;
 	width: 40px;
 	height: 16px;	
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;
 }
 
 .grincstncy{

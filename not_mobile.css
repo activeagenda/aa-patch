@@ -7,8 +7,35 @@
     background-color: #f2ffe5;
 }
 
+.fval:hover .rcdnwwnd{
+	visibility: visible;
+	opacity:1;
+}
+
 
 .lrw:hover td {
 	background-color: #f2ffe5;
 }
+.lrw:hover .rcdnwwnd{
+	visibility: visible;
+	opacity:1;
+}
+.lrw:hover .lsgrnvlnk2{
+	visibility: visible;
+	opacity:1;	
+}
 
+.lrw:hover .lsgrnvlnk1{
+	visibility: visible;
+	opacity:1;	
+}
+
+.lrw:hover .cnfnddlt{
+	visibility: visible;
+	opacity:1;
+}
+
+.lrw:hover .grqckedtd{
+	visibility: visible;
+	opacity:1;
+}
