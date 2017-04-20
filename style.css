@@ -2791,7 +2791,11 @@ li.pad3NF ul{
 	font: normal 16px "Frutiger", "Helvetica", "Arial", sans-serif;
 }
 
-
+.lstpct{
+    position: relative;
+    margin-left: -20px;
+    margin-top: -15px;	
+}
 
 .img_from_att {
 }
