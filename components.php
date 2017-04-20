@@ -896,6 +896,13 @@ function _simpleRender(&$values)
 				$RelatedRecordText = preg_replace('/(.*) \(general\)/e', "gettext('\\1').' '.gettext('(general)')", $RelatedRecordText);
 				
                 $content = '';
+
+                $content .= '<div style="margin-right:12px">';
+                $content .= '<a href="'.$link.'">';
+				$content .= $RelatedRecordText; 
+//                $content .= $this->viewRender($values);
+                $content .= '</a>';
+                $content .= '</div>';
 				if( !empty( $RelatedRecordText ) ){ 
 					if( defined('IS_RPC') && IS_RPC  ){
 						//do nothing
@@ -905,14 +912,7 @@ function _simpleRender(&$values)
 						$content .= ' title="'.gettext("View in new window").'"></a>';
 						$content .= '</div>';
 					}
-				}
-                $content .= '<div style="margin-right:12px">';
-                $content .= '<a href="'.$link.'">';
-				$content .= $RelatedRecordText; 
-
-//                $content .= $this->viewRender($values);
-                $content .= '</a>';
-                $content .= '</div>';
+				}				
             }else{
                 if( $newWin ){
                     $str_target = ' target="_blank"';
