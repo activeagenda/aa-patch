@@ -431,7 +431,7 @@ div.msgl {
 }
 .subfolder_inner {    
     padding: 0px;
-	background-color: white;
+	background-color: transparent;
 }
 .subfolder_span {
     /* used in IE only */
@@ -827,7 +827,7 @@ div.listwrap {
 }
 
 table.list {
-    background-color: #ffffff;
+    background-color: transparent;
     margin: 0px;
     border-spacing: 1px;
     position: relative;
@@ -2771,11 +2771,10 @@ li.pad3NF ul{
 }
 
 #glbinnr{
-	border: 1px #ffffff;
+
 }
 
 .glblst table{
-	border: 1px #ffffff;
 	font-size: 13px;
 }
 
