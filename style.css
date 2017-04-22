@@ -2370,8 +2370,8 @@ version: 2.2.0
 }
 
 #icDoc{
-	float: left;
-	margin-left: 20px;
+	float: right;
+	margin-top: 10px;
 }
 
 #icFor{
