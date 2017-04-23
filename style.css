@@ -808,7 +808,7 @@ table.frm {
 }
 
 .fval {
-    background-color: #fafcff;
+    background-color: rgba(250, 252, 255, 0.5);
     color: #000000;
 	padding: 4px 70px 4px 15px;
 }
@@ -935,7 +935,7 @@ a.l, a.l:VISITED {
 }
 
 td.l {
-    background-color: #fafcff;
+    background-color: rgba(250, 252, 255, 0.5);
     font: normal 12px "Helvetica", "Arial", "Verdana",  sans-serif;
     color: #000000;
 	letter-spacing: 1px;
@@ -951,7 +951,7 @@ a.l2, a.l2:VISITED {
 }
 
 td.l2 {
-    background-color: #f0f6ff;
+    background-color: rgba(240, 246, 255, 0.5);
     font: normal 12px "Verdana", "Helvetica", "Arial", sans-serif;
     color: #000000;
 }
@@ -2136,7 +2136,7 @@ version: 2.2.0
 }
 
 .hrlr td{
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.1);
 	padding: 0px;
 }
 
