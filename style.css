@@ -778,11 +778,12 @@ table.frm {
 .flbl, .flblr, .flblh, .flblw, .flbp {
     background-color: #E8E8E8;
     font-weight: bold;
-    color: #0c2578;
     text-align: right;
 	padding-left: 27px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-right: 10px;
+	color: #2460ab;
 }
 
 .flbb {
@@ -809,7 +810,7 @@ table.frm {
 .fval {
     background-color: #fafcff;
     color: #000000;
-	padding: 3px 70px 4px 4px;
+	padding: 4px 70px 4px 15px;
 }
 
 .fval div { display: inline; }
