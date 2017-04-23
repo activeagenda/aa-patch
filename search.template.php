@@ -147,8 +147,7 @@ setTimeStamp('template_rendering_startup');
 <?php 
         include_once($theme . '/dashcut.snip.php');
 		include_once $theme . '/crumbs.snip.php';
-?>
-            <?php echo  $chartToDashHTML; ?>
+?>            
         </div>
         </div>
 		<div id="srchHstCont">
