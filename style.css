@@ -1792,16 +1792,12 @@ version: 2.2.0
 .yui-tt {
     visibility:hidden;
     position:absolute;
-    background-color: #fdffb4;	
-	background:-moz-linear-gradient(center top,#feffe5,#fdffb4);
-	background:-webkit-gradient(linear,left top,left bottom,from(#feffe5),to(#fdffb4));
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffe5',endColorstr='#fdffb4');	
+    background-color: rgba(255, 255, 255, 0.85);
     font-family:arial,helvetica,verdana,sans-serif;
     padding:10px;
-    border-bottom:1px solid #96A2B0;
-	border-right:1px solid #96A2B0;
-    font:100% sans-serif;
+    border:2px solid gray;
     z-index:6;
+	color: gray;
 }
 
 * html body.masked select {
