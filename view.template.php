@@ -75,8 +75,7 @@ setTimeStamp('template_rendering_startup');
     <script type="text/javascript">
 		YAHOO.namespace("activeagenda");
 	<?php if( !$User->Client['is_Mobile'] ){ ?>       
-        YAHOO.util.Event.addListener(window, "load", attachTabEffects);
-        YAHOO.util.Event.addListener(window, "load", setupTabTooltips);	
+        YAHOO.util.Event.addListener(window, "load", attachTabEffects);	
 	<?php } //end if ?>		
         YAHOO.util.Event.addListener(window, "load", setupFormTooltips);
 		
@@ -167,7 +166,7 @@ setTimeStamp('template_rendering_startup');
                                 if(empty($tab_value[2]) || $User->PermissionToEdit($tab_value[2])){
 ?>
                             <div class="tabunsel" id="<?php echo 'cont'.$tab_key; ?>">
-                                <a class="tabb" id="<?php echo 'tab'.$tab_key; ?>" href="<?php echo  $tab_value[0]; ?>" title="<b><?php echo ShortPhrase($tab_value[1]);?>:</b><br/><br/><?php echo addslashes(LongPhrase($tab_value[1])); ?>">
+                                <a class="tabb" id="<?php echo 'tab'.$tab_key; ?>" href="<?php echo  $tab_value[0]; ?>">
 								<?php if( $tab_key =='List' ){ ?>								
 								<img class="lstpct" src="<?php echo $theme_web; ?>/img/list_white.png"/><br/>
 								<?php } ?>

@@ -73,7 +73,6 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
         YAHOO.namespace("activeagenda");
 	<?php if( !$User->Client['is_Mobile'] ){ ?> 	
         YAHOO.util.Event.addListener(window, "load", attachTabEffects);
-        YAHOO.util.Event.addListener(window, "load", setupTabTooltips);
 	<?php } //end if ?>
     </script>
 <?php
@@ -105,7 +104,7 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
                     } else {
 ?>
                     <div class="tabunsel">
-                        <a class="tabb" id="<?php echo 'tab'.$tab_key; ?>" href="<?php echo $tab_value[0]; ?>" title="<b><?php echo ShortPhrase($tab_value[1]);?>:</b><br/><br/><?php echo addslashes(LongPhrase($tab_value[1])); ?>"><?php echo ShortPhrase($tab_value[1]);?></a>
+                        <a class="tabb" id="<?php echo 'tab'.$tab_key; ?>" href="<?php echo $tab_value[0]; ?>" ><?php echo ShortPhrase($tab_value[1]);?></a>
                     </div>
 <?php
                     }

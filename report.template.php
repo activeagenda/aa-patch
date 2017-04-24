@@ -64,7 +64,6 @@ setTimeStamp('template_rendering_startup');
     <script type="text/javascript">
         YAHOO.namespace("activeagenda");
         YAHOO.util.Event.addListener(window, "load", attachTabEffects);
-        YAHOO.util.Event.addListener(window, "load", setupTabTooltips);
         YAHOO.util.Event.addListener(window, "load", setupFormTooltips);
     </script>
 </head>
@@ -118,7 +117,7 @@ setTimeStamp('template_rendering_startup');
                                 if( !isset($tab_value[2]) ){
 ?>
                             <div class="tabunsel" id="<?php echo 'cont'.$tab_key; ?>">
-                                <a class="tabb" id="<?php echo 'tab'.$tab_key; ?>" href="<?php echo  $tab_value[0]; ?>" title="<b><?php echo ShortPhrase($tab_value[1]);?>:</b><br/><br/><?php echo addslashes(LongPhrase($tab_value[1])); ?>">
+                                <a class="tabb" id="<?php echo 'tab'.$tab_key; ?>" href="<?php echo  $tab_value[0]; ?>" >
 								<?php echo ShortPhrase($tab_value[1]); ?>								
 								</a>
                             </div>

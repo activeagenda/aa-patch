@@ -70,7 +70,6 @@ setTimeStamp('template_rendering_startup');
         YAHOO.namespace("activeagenda");
 	<?php if( !$User->Client['is_Mobile'] ){ ?>  	
         YAHOO.util.Event.addListener(window, "load", attachTabEffects);
-        YAHOO.util.Event.addListener(window, "load", setupTabTooltips);
 	<?php } //end if ?>		
         YAHOO.util.Event.addListener(window, "load", setupFormTooltips);
         YAHOO.util.Event.addListener(window, "load", setupFormEffects);
