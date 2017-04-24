@@ -125,11 +125,12 @@ setTimeStamp('template_rendering_startup');
                         <?php if(!empty($prevLink)){
                             print '<a  id="arrowLeft" href="'.$prevLink.'" title="'.gettext("previous").'"></a>';
                         }else{ print '<div class="plchldr"></div>';} ?>
+						
+                        <?php echo $title;?>
+                        <?php echo GetPageTitleIcons();?>
 						<?php if( isset($tabs['List'][0]) ){
 							print '<a class="arrowTab" href="'.$tabs['List'][0].'" title="&nbsp; &nbsp; '.gettext("List").' &nbsp; &nbsp;"></a>';
 						};?>
-                        <?php echo $title;?>
-                        <?php echo GetPageTitleIcons();?>
                         <?php if( !empty($nextLink) ){
                             print '<a  id="arrowRight" href="'.$nextLink.'" title="'.gettext("next").'"></a>';
                         } ?>
