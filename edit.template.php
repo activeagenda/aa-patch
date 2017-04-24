@@ -122,14 +122,14 @@ setTimeStamp('template_rendering_startup');
                     <div id="pagetitle_label">
                         <?php if( !empty($prevLink) ){
                             print '<a  href="'.$prevLink.'" id="arrowLeft" title="'.gettext("previous").'"></a>';
-                        }else{ print '<div class="plchldr"></div>';} ?>						
-                        <?php echo $title;?>
-                        <?php echo GetPageTitleIcons();?>
+                        }else{ print '<div class="plchldr"></div>';} ?>
 						<?php if( isset($tabs['List'][0]) AND $existing){
 							print '<a class="arrowTab" href="'.$tabs['List'][0].'" title="&nbsp; &nbsp; '.gettext("List").' &nbsp; &nbsp;"></a>';
 						}else{ ;?>	
 							<img src="<?php echo $theme_web; ?>/img/list_blue.png"/>&nbsp;
 						<?php } ?>
+                        <?php echo $title;?>
+                        <?php echo GetPageTitleIcons();?>
                         <?php if( !empty($nextLink) ){
                             print '<a  href="'.$nextLink.'" id="arrowRight" title="'.gettext("next").'"></a>';
                         }?>
