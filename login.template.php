@@ -141,24 +141,19 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
     <form action="login.php?<?php echo $RedirectTo;?>" method="post">
         <table class="frm" style="margin: 0 auto">
         <tr>
-            <td class="flbl">
-                <?php echo gettext("Username:");?>
-            </td>
+            <td class="flbl"></td>
             <td class="fval">
-                <input class="edt" type="text" name="UserName" size="20" maxlength="25" value="<?php echo $defaultUserName;?>" />
+                <input class="edt" type="text" name="UserName" size="20" maxlength="25" value="<?php echo $defaultUserName;?>" placeholder="<?php echo gettext("Username");?>"/>
             </td>
         </tr>
         <tr>
-            <td class="flbl">
-                <?php echo gettext("Password:");?>
-            </td>
+            <td class="flbl"></td>
             <td class="fval">
-                <input class="edt" type="password" name="Password" size="20" maxlength="25" value="<?php echo $defaultPassword;?>" />
+                <input class="edt" type="password" name="Password" size="20" maxlength="25" value="<?php echo $defaultPassword;?>" placeholder="<?php echo gettext("Password");?>"/>
             </td>
         </tr>
         <tr>
-            <td class="flbb">
-            </td>
+            <td class="flbb"></td>
             <td class="flbb">
                 <input class="btnl" id="lgnbtn" type="submit" name="Submit" value="<?php echo gettext('Sign In');?>" />
             </td>

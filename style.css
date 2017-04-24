@@ -1792,7 +1792,7 @@ version: 2.2.0
 .yui-tt {
     visibility:hidden;
     position:absolute;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.8);
     font-family:arial,helvetica,verdana,sans-serif;
     padding:10px;
     border:2px solid gray;

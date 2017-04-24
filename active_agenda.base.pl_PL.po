@@ -2400,11 +2400,11 @@ msgstr "Nie przydzielono Ci nowych odpowiedzialności od ostatniego zalogowania.
 msgid "\"New\" accountabilities were assigned today,<br /> or since your last login a previous day."
 msgstr "\"Nowe\" odpowiedzialności zostały Ci przydzielone dzisiaj<br/> lub wczoraj po ostatnim wylogowaniu się."
 
-msgid "Username:"
-msgstr "Login:"
+msgid "Username"
+msgstr "Login"
 
-msgid "Password:"
-msgstr "Hasło:"
+msgid "Password"
+msgstr "Hasło"
 
 msgid "Sign In"
 msgstr "Zaloguj się"
