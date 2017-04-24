@@ -576,7 +576,7 @@ img#tag{
     width: 155px;
     position:relative;
     right: -10px;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }
 
 #tabcontainer {
@@ -602,6 +602,7 @@ div.tabunsel, div.tabsel, div.tabseld, div.tabg, div.tabgd, div.tabunselhi, div.
     color: #ffffff;
     margin-top: 8px;
 	min-height: 55px;
+	border-bottom: 2px #a9bcc3 solid
 }
 
 #contView {
@@ -710,8 +711,8 @@ div.ds {
     width: 149px;
     position: relative;
     left: 5px;
-    margin: 5px;
-    background-color: #f6f6f6;
+    margin: 5px 5px 10px 5px;
+    background-color: #e4f1f5;
 	padding: 6px 0 7px 0;
 }
 
