@@ -139,7 +139,9 @@ setTimeStamp('template_rendering_startup');
             </div>
         </div>
         <div id="sideshim">
-			<div id="relations_label"><?php echo $parentInfo;?></div>
+			<div id="relations_label"><?php echo $parentInfo;?>
+			    <a href="#" title="&nbsp; &nbsp; <?php echo gettext("Module Documentation");?> &nbsp; &nbsp;" onclick="open('frames_popup.php?dest=<?php echo base64_encode('supportDocView.php?mdl='.$ModuleID);?>', 'documentation', 'toolbar=0,scrollbars=1,width=1024,height=600');"><img id="icDoc" src="<?php echo $theme_web; ?>/img/documentation.png" border="0" alt="<?php echo gettext("documentation") ?>"/></a>
+			</div>
             <div id="sidearea">
                 <div id="logo">
                     <a href="<?php echo PROVIDER_LINK ?>" target="_blank"><img src="<?php echo $theme_web; ?>/img/logo_thumb.png" /></a>

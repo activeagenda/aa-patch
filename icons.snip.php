@@ -31,8 +31,7 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
     exit;
 }
 ?>
-<div id="icons">	
-    <a href="#" title="&nbsp; &nbsp; <?php echo gettext("Module Documentation");?> &nbsp; &nbsp;" onclick="open('frames_popup.php?dest=<?php echo base64_encode('supportDocView.php?mdl='.$ModuleID);?>', 'documentation', 'toolbar=0,scrollbars=1,width=1024,height=600');"><img id="icDoc" src="<?php echo $theme_web; ?>/img/documentation.png" border="0" alt="<?php echo gettext("documentation") ?>"/></a>
+<div id="icons">
 	<?php if( isset($globalDiscussions) ){ ?>
     <a href="<?php echo $globalDiscussions;?>" title="&nbsp; &nbsp; <?php echo gettext("Feedback");?> &nbsp; &nbsp;" target="_blank" ><img id="icFor" src="<?php echo $theme_web; ?>/img/feedback.png" border="0" alt="<?php echo gettext("feedback") ?>"/></a>	
 	<?php }?>
