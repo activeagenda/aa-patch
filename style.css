@@ -905,10 +905,7 @@ a.l, a.l:VISITED {
 	background-repeat: no-repeat;
     background-position: center;
 	width:80px;
-	height: 30px;
-	visibility: hidden;
-	opacity:0;
-    transition:opacity 1s ease;	
+	height: 30px;	
 }
 
 .lsgrnvlnk2{
@@ -918,9 +915,6 @@ a.l, a.l:VISITED {
     background-position: center;
 	width:40px;
 	height:30px;
-	visibility: hidden;
-	opacity:0;
-    transition:opacity 1s ease;
 }
 
 .cnfnddlt{
@@ -930,9 +924,6 @@ a.l, a.l:VISITED {
     background-position: center;
 	width:30px;
 	height:30px;
-    visibility: hidden;	
-	opacity:0;
-    transition:opacity 1s ease;
 }
 
 td.l {
@@ -1792,7 +1783,7 @@ version: 2.2.0
 .yui-tt {
     visibility:hidden;
     position:absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
     font-family:arial,helvetica,verdana,sans-serif;
     padding:10px;
     border:2px solid gray;
@@ -2521,10 +2512,7 @@ li.pad3NF ul{
 	background-repeat: no-repeat;
     background-position: center;
 	width: 40px;
-	height: 16px;
-	visibility: hidden;
-	opacity:0;
-    transition:opacity 1s ease;
+	height: 16px;	
 }
 
 .grqckedtd{
@@ -2533,10 +2521,7 @@ li.pad3NF ul{
 	background-repeat: no-repeat;
     background-position: center;
 	width: 40px;
-	height: 16px;	
-	visibility: hidden;
-	opacity:0;
-    transition:opacity 1s ease;
+	height: 16px;
 }
 
 .grincstncy{

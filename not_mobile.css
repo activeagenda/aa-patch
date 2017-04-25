@@ -7,27 +7,51 @@
     background-color: #f2ffe5;
 }
 
+.rcdnwwnd{
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;
+}
+
 .fval:hover .rcdnwwnd{
 	visibility: visible;
 	opacity:1;
 }
 
-
 .lrw:hover td {
 	background-color: #f2ffe5;
 }
+
 .lrw:hover .rcdnwwnd{
 	visibility: visible;
 	opacity:1;
 }
+
+.lsgrnvlnk1{
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;		
+}
+.lrw:hover .lsgrnvlnk1{
+	visibility: visible;
+	opacity:1;	
+}
+
+.lsgrnvlnk2{
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;
+}
+
 .lrw:hover .lsgrnvlnk2{
 	visibility: visible;
 	opacity:1;	
 }
 
-.lrw:hover .lsgrnvlnk1{
-	visibility: visible;
-	opacity:1;	
+.cnfnddlt{	
+    visibility: hidden;	
+	opacity:0;
+    transition:opacity 1s ease;
 }
 
 .lrw:hover .cnfnddlt{
@@ -35,6 +59,12 @@
 	opacity:1;
 }
 
+.grqckedtd{	
+	visibility: hidden;
+	opacity:0;
+    transition:opacity 1s ease;
+}
+	
 .lrw:hover .grqckedtd{
 	visibility: visible;
 	opacity:1;
