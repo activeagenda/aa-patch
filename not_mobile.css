@@ -3,6 +3,14 @@
  * 
  **/
 
+.sz2tabs {
+    padding-left: 100px;
+}
+ 
+#navi_area {	
+    padding: 0.5em 2em 1.5em 4.5em;	
+}
+ 
 .fval:hover {
     background-color: #f2ffe5;
 }
