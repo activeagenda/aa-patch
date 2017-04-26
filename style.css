@@ -829,7 +829,6 @@ table.list {
     background-color: transparent;
     margin: 0px;
     border-spacing: 1px;
-    position: relative;
 }
 
 .grid .list {
