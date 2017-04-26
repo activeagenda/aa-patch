@@ -39,7 +39,11 @@ set_include_path(PEAR_PATH . PATH_SEPARATOR . get_include_path());
 
 $newLang='';
 if(defined('DEFAULT_LOCALE')){
-        $newLang = DEFAULT_LOCALE;
+		if (strcasecmp(locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']), DEFAULT_LOCALE) == 0){
+			$newLang = DEFAULT_LOCALE;
+		} else {
+			$newLang = 'en_US';
+		}
     } else {
         $newLang = 'en_US';
     }
