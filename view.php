@@ -96,7 +96,7 @@ if ( $User->checkRecordPermission( $ModuleID, $recordID) == 0 ){
 setTimeStamp('after_gen_screen');
 
 if( !isset($disableGlobalModules) || !$disableGlobalModules ){
-	$content .= $siteNavigationSnip.'<h1 id="Global"></a><span class="h1glb">'.gettext("Global").'</span></h1>';
+	$content .= $siteNavigationSnip.'<h1 id="Global"></a><span class="h1glb"></span></h1>';
 	
 	$globalModules = array( 'nts','lnk','cos','rmd' );	
 	foreach( $globalModules as $GlobalModuleID ){	

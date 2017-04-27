@@ -75,10 +75,16 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
         .frm, .flbl, .fval, .flbb {
             background: transparent;
             color: #0c2578;
+			padding-left: 15px;
+			padding-right: 15px;
         }
         .flbb {
             text-align:left;
         }
+		#lgnbtn{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
     </style>
 </head>
 <body onload="document.forms[0].UserName.focus()">
@@ -141,21 +147,18 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
     <form action="login.php?<?php echo $RedirectTo;?>" method="post">
         <table class="frm" style="margin: 0 auto">
         <tr>
-            <td class="flbl"></td>
             <td class="fval">
-                <input class="edt" type="text" name="UserName" size="20" maxlength="25" value="<?php echo $defaultUserName;?>" placeholder="<?php echo gettext("Username");?>"/>
+                <input class="edt" type="text" name="UserName" size="20" maxlength="25" value="<?php echo $defaultUserName;?>" placeholder="<?php echo gettext("Username");?>" tabindex=1 />
             </td>
         </tr>
         <tr>
-            <td class="flbl"></td>
             <td class="fval">
-                <input class="edt" type="password" name="Password" size="20" maxlength="25" value="<?php echo $defaultPassword;?>" placeholder="<?php echo gettext("Password");?>"/>
+                <input class="edt" type="password" name="Password" size="20" maxlength="25" value="<?php echo $defaultPassword;?>" placeholder="<?php echo gettext("Password");?>" tabindex=2 />
             </td>
         </tr>
         <tr>
-            <td class="flbb"></td>
             <td class="flbb">
-                <input class="btnl" id="lgnbtn" type="submit" name="Submit" value="<?php echo gettext('Sign In');?>" />
+                <input class="btnl" id="lgnbtn" type="submit" name="Submit" value="<?php echo gettext('Sign In');?>" tabindex=3 />
             </td>
         </tr>
         </table>

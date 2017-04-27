@@ -216,12 +216,6 @@ a:HOVER {
 	letter-spacing: 1px;
 }
 
-h1#Global{
-	color: #949494;
-	border-top-style: groove;	
-	border-top-width: 2px;
-	border-color: #e8e8e8;
-}
 
 .h1glb{
 	margin-left: 90px;
@@ -524,14 +518,15 @@ img#tag{
     margin: 0 0 30px 0;
     border-width: 1px 2px 2px 1px;
     border-style: solid solid solid solid;
-    width: 99%;
+    width: 97%;
     padding-bottom: 30px;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
 #content_notitle {
 	padding-left: 0.5em;
 	margin-top: 15px;
+	width: 99%;
 }
 
 #content {
@@ -2032,7 +2027,6 @@ version: 2.2.0
 }
 
 #cogs{
-	margin-top: 50px;
 	margin-bottom: 100px;
 }
 
