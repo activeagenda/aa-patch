@@ -496,7 +496,7 @@ function renderHeaders($orderBys)
     case 'edit_nfe':
     case 'edit_noadd':
     case 'view':
-		$content = sprintf( GRID_HEADER_CELL, '', '' ).$content;
+		$content .= sprintf( GRID_HEADER_CELL, '', '' );
 		break;
     case 'list':
     default:
@@ -716,16 +716,31 @@ function renderRows($startRow, $orderBys)
 				$rowMenuID
 			);
 		}else{
-			$content .= sprintf(
-				VIEWGRID_ROW,
-				$tdClass,
-				$rowID,
-				$linkCode,
-				$rowContent,
-				$vgModuleID,
-				$markerID,
-				$this->moduleID
-			);
+			 switch($this->gridType){
+			 case 'view':
+				$content .= sprintf(
+					VIEWGRID_ROW1,
+					$tdClass,
+					$rowID,
+					$linkCode,
+					$rowContent,
+					$vgModuleID,
+					$markerID,
+					$this->moduleID
+				);
+				break;
+			default:
+				$content .= sprintf(
+					VIEWGRID_ROW,
+					$tdClass,
+					$rowID,
+					$linkCode,
+					$rowContent,
+					$vgModuleID,
+					$markerID,
+					$this->moduleID
+				);
+			 }
 		}
 
     }
