@@ -895,7 +895,7 @@ a.l, a.l:VISITED {
 	background-image: url(img/list_viewrecord.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width:80px;
+	width:30px;
 	height: 30px;	
 }
 
@@ -904,7 +904,7 @@ a.l, a.l:VISITED {
 	background-image: url(img/list_viewrecord.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width:40px;
+	width:30px;
 	height:30px;
 }
 
@@ -912,7 +912,7 @@ a.l, a.l:VISITED {
 	display: inline-block;
 	background-image: url(img/list_deleterecord.png);
 	background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
 	width:30px;
 	height:30px;
 }
@@ -2482,7 +2482,7 @@ li.pad3NF ul{
 	background-image: url(img/list_addnew.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 80px;
+	width: 30px;
 	height: 16px;	
 }
 
@@ -2500,7 +2500,7 @@ li.pad3NF ul{
 	background-image: url(img/record_new_window.gif);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 40px;
+	width: 16px;
 	height: 16px;	
 }
 
@@ -2509,7 +2509,7 @@ li.pad3NF ul{
 	background-image: url(img/grid_quickedit.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 40px;
+	width: 16px;
 	height: 16px;
 }
 
@@ -2518,7 +2518,7 @@ li.pad3NF ul{
 	background-image: url(img/grid_inconsistency.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 40px;
+	width: 16px;
 	height: 16px;	
 }
 
@@ -2566,7 +2566,7 @@ li.pad3NF ul{
 	background-image: url(img/seq_next.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 40px;
+	width: 16px;
 	height: 16px;
 }
 
@@ -2576,7 +2576,7 @@ li.pad3NF ul{
 	background-image: url(img/seq_prev.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 40px;
+	width: 16px;
 	height: 16px;
 }
 

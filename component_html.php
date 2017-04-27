@@ -621,8 +621,11 @@ define('VIEWGRID_ROW', '<tr %6$s class="lrw">
 define('VIEWGRID_ROW1', '<tr %6$s class="lrw">   
     %4$s  <td class="%1$s" align="center" id="%7$s_loc%5$s%2$s">%3$s</td>
 </tr>');
-define('VIEWGRID_ROW_FIX', '<tr %6$s class="lrw"  oncontextmenu="displayRecordMenu( event, \'%8$s\', 1 ); return false;">
+/*define('VIEWGRID_ROW_FIX', '<tr %6$s class="lrw"  oncontextmenu="displayRecordMenu( event, \'%8$s\', 1 ); return false;">
     %4$s <td class="%1$s" align="center" style="width:%7$spx" id="loc%5$s%2$s">%3$s</td>
+</tr>');*/
+define('VIEWGRID_ROW_FIX', '<tr %6$s class="lrw"  oncontextmenu="displayRecordMenu( event, \'%8$s\', 1 ); return false;">
+    %4$s <td class="%1$s" align="center" id="loc%5$s%2$s">%3$s</td>
 </tr>');
 define('VIEWGRID_ROW_EMAIL', '<tr class="lrw">
     %s
