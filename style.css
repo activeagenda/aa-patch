@@ -904,7 +904,7 @@ a.l, a.l:VISITED {
 	background-image: url(img/list_viewrecord.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width:30px;
+	width:40px;
 	height:30px;
 }
 
@@ -915,6 +915,7 @@ a.l, a.l:VISITED {
     background-position: right center;
 	width:30px;
 	height:30px;
+	margin-left: 10px;
 }
 
 td.l {
@@ -2491,7 +2492,7 @@ li.pad3NF ul{
 	background-image: url(img/grid_quickadd.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 16px;
+	width: 20px;
 	height: 16px;	
 }
 
@@ -2509,7 +2510,7 @@ li.pad3NF ul{
 	background-image: url(img/grid_quickedit.png);
 	background-repeat: no-repeat;
     background-position: center;
-	width: 16px;
+	width: 20px;
 	height: 16px;
 }
 

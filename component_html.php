@@ -621,9 +621,6 @@ define('VIEWGRID_ROW', '<tr %6$s class="lrw">
 define('VIEWGRID_ROW1', '<tr %6$s class="lrw">   
     %4$s  <td class="%1$s" align="center" id="%7$s_loc%5$s%2$s">%3$s</td>
 </tr>');
-/*define('VIEWGRID_ROW_FIX', '<tr %6$s class="lrw"  oncontextmenu="displayRecordMenu( event, \'%8$s\', 1 ); return false;">
-    %4$s <td class="%1$s" align="center" style="width:%7$spx" id="loc%5$s%2$s">%3$s</td>
-</tr>');*/
 define('VIEWGRID_ROW_FIX', '<tr %6$s class="lrw"  oncontextmenu="displayRecordMenu( event, \'%8$s\', 1 ); return false;">
     %4$s <td class="%1$s" align="center" id="loc%5$s%2$s">%3$s</td>
 </tr>');
@@ -644,7 +641,7 @@ define('LIST_GRID_NAVLINK',
 '<a class="%2$s lsgrnvlnk1" href="%1$s" id="vw%5$s" title="%4$s"></a>%6$s%7$s');
 
 define('LIST_GRID_NAVLINK_EDIT', 
-'<a class="%2$s lsgrnvlnk2" href="%1$s" id="vw%5$s" title="%4$s"></a>&nbsp;
+'<a class="%2$s lsgrnvlnk2" href="%1$s" id="vw%5$s" title="%4$s"></a>
 <a class="%2$s cnfnddlt"  id="ew%5$s" title="%9$s"  onclick="confirmAndDelete(\'%8$s\')"></a>%6$s%7$s');
 
 //parameters: 1 link, 2 CSS class, 3 theme location, 4 alt message, 5 rowID, 6 <not used>, 7 module ID (for unique element ID)
