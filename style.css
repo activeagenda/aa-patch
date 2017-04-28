@@ -835,6 +835,10 @@ table.list tr td {
 	padding: 20px 10px 20px 10px; 
 }
 
+table.list td:first-child { 
+	padding-left: 25px; 
+}
+
 #LastVisited td{
 	border-top: dotted 1px #A1A1A1;    
     border-bottom: dotted 1px #A1A1A1;
