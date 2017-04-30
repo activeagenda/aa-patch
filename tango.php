@@ -74,7 +74,7 @@ class ezcGraphPaletteTango extends ezcGraphPalette
      * 
      * @var ezcGraphColor
      */
-    protected $chartBackground = '#FFFFFF00';
+    protected $chartBackground = '#FFFFFFCC';
 
     /**
      * Padding in elements

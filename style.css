@@ -1166,11 +1166,6 @@ div.dl_icon_clear {
     padding: 3px;
 }
 
-.chartarea {
-    background-color: #ffffff;
-    padding: 2px;
-}
-
 .chartphrases {
     font: normal 9px "Verdana", "Helvetica", "Arial", sans-serif;
     color: #0c2578;
@@ -1179,7 +1174,6 @@ div.dl_icon_clear {
 .charticons { float: right; }
 
 .chartbar {
-    background-color: #ffffff;
     border-bottom: solid 1px #999999;
     margin: 1px;
     margin-bottom: 4px;
