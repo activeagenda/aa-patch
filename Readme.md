@@ -12,4 +12,4 @@ The installation of the framework happens over patching [aa-base](https://github
 
 For details how to install the framework and the  [BOf::](https://activeagenda.github.io) look at https://github.com/activeagenda/documentation
 
-For a system demo browse to http://demo-s1st.cloudapp.net
+For a Actiev Agenda and [BOf::](https://activeagenda.github.io)  demo browse to http://demo-s1st.cloudapp.net
