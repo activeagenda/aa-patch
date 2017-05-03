@@ -222,3 +222,11 @@ cp home.js $AA_PATH/active_agenda/web/js/home.js
 cp menu_down.gif $AA_PATH/active_agenda/web/themes/aa_theme/img/menu_down.gif
 cp menu_up.gif $AA_PATH/active_agenda/web/themes/aa_theme/img/menu_up.gif
 cp follow.gif $AA_PATH/active_agenda/web/themes/aa_theme/img/follow.gif
+cp go-first-grey.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-first-grey.png
+cp go-last-grey.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-last-grey.png
+cp go-next-grey.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-next-grey.png
+cp go-previous-grey.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-previous-grey.png
+cp go-first.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-first.png
+cp go-last.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-last.png
+cp go-next.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-next.png
+cp go-previous.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-previous.png
