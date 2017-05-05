@@ -42,6 +42,7 @@ Distributed under the <a href="license.html" target="_blank">Reciprocal Public L
 <a href="https://s1st.pl/regulations.html" target="_blank"><?php echo gettext('Web Site Regulations'); ?></a> | 
 <a href="https://s1st.pl/privacy.html" target="_blank"><?php echo gettext('Site Privacy'); ?></a>
 -->
+<a href="https://github.com/activeagenda" target="_blank">https://github.com/activeagenda</a>
 </div>
 <?php if( !$noCogsVisible ){ ?>
 <img  src="<?php echo $theme_web; ?>/img/cogs_sm.png"/>

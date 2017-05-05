@@ -596,10 +596,10 @@ div.tabunsel, div.tabsel, div.tabseld, div.tabg, div.tabgd, div.tabunselhi, div.
 	min-height: 55px;
 	border-bottom: 2px #a9bcc3 solid;
 	border-right: 2px #a9bcc3 solid;
-	background: #6db3f2; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #4384c5; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #4384c5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#4384c5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#4384c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -2085,7 +2085,7 @@ version: 2.2.0
 
 #fnlf a {
 	float: left;
-	margin-left: -12px
+	margin-left: -11px
 }
 
 #reacl{
