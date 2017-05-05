@@ -231,12 +231,12 @@ setTimeStamp('template_rendering_startup');
 		<div id="fnlf">
 		<?php if( $fnAllowEdit ){ ?>
 		<a href="list.php?mdl=modfn&filter=1&RelatedModuleID=<?php echo $ModuleID; ?>">
-		<?php echo gettext("Module remarks for users"); ?>
+		<?php echo "&#9492 ". gettext("Module remarks for users"); ?>
 		</a>
 		<?php } ?>
 		</div>
 		<div id="pulf"><a href="list.php?mdl=pu&filter=1&RelatedModuleID=<?php echo $ModuleID; ?>">
-		<?php echo gettext("Power users supporting this module"); ?>
+		<?php echo gettext("Power users supporting this module")." &#9496"; ?>
 		</a></div>
 		<?php 
 			echo $modFootnotes;
