@@ -614,7 +614,7 @@ div.tabsel, div.tabseld {
     margin-left: -5px;
     color: #000000;
     border-bottom: 1px #96a2b0 solid;
-	border-top: 10px #4384c5 solid;
+	border-top: 10px #3690f0 solid;
 	border-left: 1px #ebeded solid;
 	border-right: 1px #96a2b0 solid;
 	/* min-height: 30px; */
@@ -1211,10 +1211,9 @@ div.glossaryDef p {
 
 
 .recinfo {
-    font: normal 11px "Verdana", "Helvetica", "Arial", sans-serif;
+    font: normal 10px "Verdana", "Helvetica", "Arial", sans-serif;
     color: #0c2578;
-    margin-left: 10px;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 40px;
 }
 
@@ -2064,8 +2063,6 @@ version: 2.2.0
 	font: bold 13px Tahoma, Arial, Helvetica, sans-serif;
 }
 
-
-
 #pulf {
 	margin-right: 183px;
 	margin-bottom: 40px;
@@ -2074,7 +2071,6 @@ version: 2.2.0
 
 #pulf a {
 	float: right;
-	margin-right: -10px
 }
 
 #fnlf {
@@ -2084,8 +2080,8 @@ version: 2.2.0
 }
 
 #fnlf a {
-	float: left;
-	margin-left: -11px
+	float: left;	
+	margin-left: -15px;
 }
 
 #reacl{

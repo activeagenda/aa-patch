@@ -38,10 +38,6 @@ if(!defined('EXEC_STATE') || EXEC_STATE != 1){
 Copyright &#169; <a href="http://www.activeagenda.net" target="_blank">Active Agenda, Inc.</a> | 
 <a href="http://www.activeagenda.net/sponsors" target="_blank">Sponsors</a> | <a href="http://www.activeagenda.net/contributors" target="_blank">Contributors</a><br/>
 Distributed under the <a href="license.html" target="_blank">Reciprocal Public License</a><br/>
-<!--
-<a href="https://s1st.pl/regulations.html" target="_blank"><?php echo gettext('Web Site Regulations'); ?></a> | 
-<a href="https://s1st.pl/privacy.html" target="_blank"><?php echo gettext('Site Privacy'); ?></a>
--->
 <a href="https://github.com/activeagenda" target="_blank">https://github.com/activeagenda</a>
 </div>
 <?php if( !$noCogsVisible ){ ?>

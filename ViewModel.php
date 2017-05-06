@@ -178,9 +178,7 @@
     $content = renderViewTable($content, $allowEdit, $backlink, $editlink);
 
     //add byline info on record modification info
-	$content .= "<div id=\"RecordInfo\" class=\"recinfo\">";
-	$content .= '<a href="list.php?mdl=pu&filter=1&RelatedModuleID='.$ModuleID.'">
-				'.gettext("Power users supporting this module").'</a>&nbsp;&nbsp;|&nbsp;&nbsp;';    
+	$content .= "<div id=\"RecordInfo\" class=\"recinfo\">";  
     $content .= '<a href="audit.php?mdl='.$ModuleID.'&rid='.$recordID.'&sr='.$_GET['sr'].'">'."{$phrases['_ModDate']} {$data['_ModDate']}".'</a> ';    
     $content .= "</div>";
 
