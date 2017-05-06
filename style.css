@@ -170,17 +170,6 @@ ul {
     list-style-type: square;
 }
 
-/*general text styles*/
-h1 {
-    font: bold 17px "Frutiger", "Helvetica", "Arial", sans-serif;
-    color: #1C4A82;
-    background-color: transparent;
-    margin: 30px 5px 20px -5px;
-    padding: 10px 0 10px 0;
-    border-top: 1px dotted #96a2b0;
-	clear: left;
-}
-
 h2 {
     font: bold 15px "Verdana", "Helvetica", "Arial", sans-serif;
     color: #0c2578;
@@ -2076,6 +2065,7 @@ version: 2.2.0
 #fnlf {
 	margin-right: 180px;
 	margin-left: 10px;
+	margin-top: 20px;
 	font: normal 10px Verdana, Helvetica, Arial, sans-serif;
 }
 
