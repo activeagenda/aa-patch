@@ -2318,16 +2318,20 @@ version: 2.2.0
 
 .sya{
 	color: #008000;
+	font-family: "Segoe UI";
 }
 .sna{
 	color: #C60101;
+	font-family: "Segoe UI";
 }
 .sra{
 	color: #4384C5;
+	font-family: "Segoe UI";
 }
 
 .src{
 	color: grey;
+	font-family: "Segoe UI";
 }
 
 .cmfn{
@@ -2352,11 +2356,13 @@ version: 2.2.0
 .pra{
 	font-size: 75%;
 	color: #808080;
+	font-family: "Segoe UI";
 }
 
 .prb{
 	font-size: 75%;
 	color: #c0c0c0;
+	font-family: "Segoe UI";
 }
 
 .clndr{
