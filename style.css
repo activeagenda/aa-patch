@@ -2757,6 +2757,20 @@ li.pad3NF ul{
     margin-top: -15px;	
 }
 
-.img_from_att {
+.ownrfld{
+	font-size: 10px;
+	font-family: "Segoe UI";
+	color: #808080;
+	margin-left: 20px;
+	margin-right: 20px;
+	letter-spacing: 1px;	
 }
 
+.crtfld{
+	font-size: 10px;
+	font-family: "Segoe UI";
+	color: #808080;
+	margin-left: 20px;
+	margin-right: 20px;
+	letter-spacing: 1px;	
+}
