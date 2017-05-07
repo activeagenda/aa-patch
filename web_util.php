@@ -1552,7 +1552,7 @@ WHERE `mod`.ModuleID = '$moduleID' ";
 				}
 			}
 			unset($element); // break the reference with the last element
-			$menuItemSeparator = '<img src="'.$theme_web.'/img/order_right.png"/>&nbsp;';
+			$menuItemSeparator = '&nbsp;<img src="'.$theme_web.'/img/order_right.png"/>&nbsp;';
 			$defaultMenuPath = implode( $menuItemSeparator, $defaultMenuPathElements );
 			$link = sprintf( $defaultMenuPath );        
 			return $relations_icon . $link;
