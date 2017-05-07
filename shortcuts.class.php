@@ -41,7 +41,7 @@ function renderG5Menu()
 	if(count($r) > 0){
 		foreach($r as $shortcut){
 			// addSubMenu("nav-top_1", "RPM path", "RPM path", "list.php?mdl=xr", "nav-top_1_2", "");
-			$menuCode .= "addLink('dsc-top_1','".$shortcut['Title']." (&nbsp;".$shortcut['Type']."&nbsp;)', '".$shortcut['Title']."', '";
+			$menuCode .= "addLink('dsc-top_1','".$shortcut['Title']." &#9656&nbsp;".strip_tags($shortcut['Type'],'<br>')."', '".$shortcut['Title']."', '";
 			$menuCode .= $shortcut['InternalLink']."', '');\n";
 			$counter++;		
 		}

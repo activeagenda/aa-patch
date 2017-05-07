@@ -66,7 +66,7 @@ if( isset($_SERVER['HTTPS']) ) {
 		
 		<div class="ds">
 		 <p>
-			<a href="<?php echo $encodedLinkHere;?>" target="_blank" title="<?php echo gettext("Useful for shortcuts, bookmarks, etc.");?>"><?php echo  gettext("Direct link to this page");?></a>:</p>
+			<a href="<?php echo $encodedLinkHere;?>" target="_blank" title="<?php echo gettext("Useful for shortcuts, bookmarks, etc.");?>"><?php echo  gettext("Direct link to this page");?></a></p>
 			<a href="mailto:<?php echo '?subject='.$email_Subject.'&body='.$protocol_server_ext_adrr.'/'.$encodedLinkHere ?>" title="&nbsp; &nbsp; <?php echo gettext("Send the link by email");?> &nbsp; &nbsp;">
 			<img src="<?php echo $theme_web; ?>/img/email.png" id="emlnk"/></a>
 			<p><input type="text" class="edtl" id="dspurl" size="32" onclick="this.select()" value="<?php echo $protocol_server_ext_adrr.'/'.$encodedLinkHere;?>" /></p>
