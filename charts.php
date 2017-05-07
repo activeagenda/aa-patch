@@ -310,7 +310,7 @@ $content .= "</div>\n";
 
 $moduleInfo = GetModuleInfo($ModuleID);
 
-$title = gettext($moduleInfo->getProperty('moduleName')).' &#10143; '.gettext("charts");
+$title = gettext($moduleInfo->getProperty('moduleName')).' &#9654; '.gettext("charts");
 
 if( $search->hasConditions() ){
     if($search->isUserDefault){

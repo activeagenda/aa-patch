@@ -117,7 +117,7 @@ if( empty($dash_shortcutTitle) ){
 }
 //END
 //have $jsIncludes
-$title = $pageTitle.' &#10143; '.gettext("search");
+$title = $pageTitle.' &#9654; '.gettext("search");
 //have $tabs
 
 //have $screenPhrase

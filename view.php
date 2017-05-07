@@ -222,5 +222,5 @@ function confirmDelete(sender){
 
 include_once $theme . '/view.template.php';
 
-AddBreadCrumb("$recordLabel $titleCrumbs &#10143; ".gettext("View"));
+AddBreadCrumb("$recordLabel $titleCrumbs &#9654; ".gettext("View"));
 ?>

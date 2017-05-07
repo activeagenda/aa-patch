@@ -169,8 +169,8 @@ if ( !$User->BoolCheckEditScreenPermission() AND  empty( $NoEditScrPermission) )
 	}
 }
 
-$title = '<span class="rcrdLbl">'.$recordLabel.'</span><span class="esgn"> &#10143; </span>'.gettext('Record reports');
-$titleCrumbs = $recordLabel.'<span class="esgn">&nbsp; &#10143; &nbsp;</span>'.gettext('Record reports');
+$title = '<span class="rcrdLbl">'.$recordLabel.'</span><span class="esgn"> &#9654; </span>'.gettext('Record reports');
+$titleCrumbs = $recordLabel.'<span class="esgn">&nbsp; &#9654; &nbsp;</span>'.gettext('Record reports');
 $recordLabel = gettext($singularRecordName);
 $scTitle = $recordLabel;
 $scType = gettext('Record reports');

@@ -227,5 +227,5 @@ if( $_GET['rdct'] == 'charts' ){
 //$linkHere
 include_once $theme . '/list.template.php';
 
-AddBreadCrumb($origPageTitle . ' &#10143; '. gettext("List"));
+AddBreadCrumb($origPageTitle . ' &#9654; '. gettext("List"));
 ?>

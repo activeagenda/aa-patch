@@ -188,7 +188,7 @@ $content .= $siteNavigationSnip;
 
 
 //$jsIncludes
-$title = gettext($singularRecordName).'<span class="esgn"> &#10143; </span>'.gettext($gridPluralName);
+$title = gettext($singularRecordName).'<span class="esgn"> &#9654; </span>'.gettext($gridPluralName);
 $subtitle = sprintf(gettext("Manage %s for this %s:"), gettext($gridPluralName), gettext($singularRecordName));
 //$user_info
 $screenPhrase = ShortPhrase($screenPhrase);

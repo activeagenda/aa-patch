@@ -256,11 +256,11 @@ $content .= $siteNavigationSnip;
 $moduleID = $ModuleID;
 if( $existing ){
     $recordLabel = $pageTitle;
-    $title = '<span class="rcrdLbl">'.$recordLabelField.'</span><span class="esgn">&nbsp; &#10143; &nbsp;</span>'.strip_tags($screenPhrase);
-	$titleCrumbs = $recordLabelField.'<span class="esgn"> &#10143; </span>'.strip_tags($screenPhrase);
+    $title = '<span class="rcrdLbl">'.$recordLabelField.'</span><span class="esgn">&nbsp; &#9654; &nbsp;</span>'.strip_tags($screenPhrase);
+	$titleCrumbs = $recordLabelField.'<span class="esgn"> &#9654; </span>'.strip_tags($screenPhrase);
 }else{
     $recordLabel = sprintf(gettext("Entering a new %s record"), $singularRecordName);
-    $title = '<span class="rcrdLblnr">'.$pageTitle.'</span><span class="esgn">&nbsp; &#10143; &nbsp;</span>'.gettext("Add new record");
+    $title = '<span class="rcrdLblnr">'.$pageTitle.'</span><span class="esgn">&nbsp; &#9654; &nbsp;</span>'.gettext("Add new record");
 }
 //$recordID;
 //$content;
