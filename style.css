@@ -324,7 +324,7 @@ div.msgl {
 
 #pagetitle_label_lc {
     background-color: #ffffff;
-    font: normal 16px "Segoe UI", "Tahoma","Frutiger", "Helvetica", "Arial", sans-serif;
+    font: normal 16px "Tahoma","Frutiger", "Helvetica", "Arial", sans-serif;
     color: #0C2578;
     padding-right: 20px;
 	/*line-height: 20px; */
@@ -333,7 +333,7 @@ div.msgl {
 
 #pagetitle_label_sr {
     background-color: #ffffff;
-    font: normal 16px "Segoe UI", "Frutiger", "Helvetica", "Arial", sans-serif;
+    font: normal 16px "Frutiger", "Helvetica", "Arial", sans-serif;
     color: #0C2578;
     padding-right: 20px;
 	line-height: 20px;
@@ -1240,7 +1240,7 @@ div.glossaryDef p {
     padding: 11px 1em 1em 1em;
     margin-left: 6px;
     width: 26em;
-	font:13px/1.231 "Segoe UI", arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;
+	font: 13px arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;
 }
 
 .searchHistory{
@@ -2052,7 +2052,7 @@ version: 2.2.0
 #navi_area>li {
 	list-style: url(img/transparent.gif);
 	margin: 0em 0.5em 3.7em 0.5em;
-	font: bold 13px "Segoe UI", Tahoma, Arial, Helvetica, sans-serif;
+	font: bold 13px Tahoma, Arial, Helvetica, sans-serif;
 }
 
 #pulf {
