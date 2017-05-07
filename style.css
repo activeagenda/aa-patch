@@ -65,7 +65,7 @@ div#fakebody {
     border-spacing: 0;
 }
 #nav_table tr td {
-    font: normal 10px "Segoe UI", "Tahoma", "Helvetica", sans-serif;
+    font: normal 9px "Segoe UI", "Tahoma", "Helvetica", sans-serif;
     text-align: center;
     border-right: 1px solid #2460ab;
     border-left: 1px solid #ceddf3;
