@@ -50,7 +50,7 @@ if( isset($_SERVER['HTTPS']) ) {
 			
             <p><a href="<?php echo $linkHere . '&amp;shortcut=remove';?>" title="&nbsp; &nbsp; <?php echo gettext("Click here to remove this page from the shortcuts on your home page."); ?> &nbsp; &nbsp;"><?php echo gettext("Remove shortcut"); ?>
 			&#171;&nbsp;<img src="<?php echo $theme_web; ?>/img/nav_bugreport.png"/>&nbsp;<?php echo gettext("my Shortcuts"); ?>&nbsp;&#187;
-			<br/><img src="<?php echo $theme_web; ?>/img/triangel.png"/> <?php echo $dash_shortcutTitle  ?></a></p>
+			</p><p><?php echo $dash_shortcutTitle  ?></a></p>
 			<?php  } else {
             ?>
             <p><a href="javascript:dash_showShortcutForm()" title="&nbsp; &nbsp; <?php echo gettext("Click here to add this page as a shortcut on your home page."); ?>&nbsp; &nbsp;"><?php echo  gettext("Add shortcut"); ?>
@@ -66,10 +66,10 @@ if( isset($_SERVER['HTTPS']) ) {
 		
 		<div class="ds">
 		 <p>
+			<a href="<?php echo $encodedLinkHere;?>" target="_blank" title="<?php echo gettext("Useful for shortcuts, bookmarks, etc.");?>"><?php echo  gettext("Direct link to this page");?></a>:</p>
 			<a href="mailto:<?php echo '?subject='.$email_Subject.'&body='.$protocol_server_ext_adrr.'/'.$encodedLinkHere ?>" title="&nbsp; &nbsp; <?php echo gettext("Send the link by email");?> &nbsp; &nbsp;">
 			<img src="<?php echo $theme_web; ?>/img/email.png" id="emlnk"/></a>
-			<a href="<?php echo $encodedLinkHere;?>" target="_blank" title="<?php echo gettext("Useful for shortcuts, bookmarks, etc.");?>"><?php echo  gettext("Direct link to this page");?></a>:</p>
-			<p><input type="text" class="edtl" size="32" onclick="this.select()" value="<?php echo $protocol_server_ext_adrr.'/'.$encodedLinkHere;?>" /></p>
+			<p><input type="text" class="edtl" id="dspurl" size="32" onclick="this.select()" value="<?php echo $protocol_server_ext_adrr.'/'.$encodedLinkHere;?>" /></p>
             <?php if(!empty($xmlExportLink)){  ?>
                 <p><a href="<?php echo $xmlExportLink;?>" <?php if( $User->browserInfo['is_IE'] ){echo 'target="_blank"';} ?> title="&nbsp; &nbsp; <?php echo gettext("Click here to download this record as an XML data file."); ?> &nbsp; &nbsp;"><?php echo gettext("XML Download"); ?></a>
                 </p>

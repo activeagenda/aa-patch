@@ -2464,7 +2464,7 @@ msgid "Manage the list of people that should be notified"
 msgstr "Zarządzaj listą ludzi do powiadomienia"
 
 msgid "You have been here"
-msgstr "&nbsp;&#x25BC; Historia sesji"
+msgstr "Historia sesji"
 
 msgid "View"
 msgstr "Wiersz"

@@ -704,14 +704,13 @@ div.ds {
     margin: 5px 5px 10px 5px;
     background-color: #e4f1f5;
 	padding: 6px 0 7px 0;
+	text-align: center;
 }
 
 div.ds p {
-    font-size: 9px;
-	font-family: "Tahoma";
-    text-indent: -13px;
-    padding: 0 0 0 15px;
-    margin: 2px 0;
+    font-size: 10px;
+	font-family: "Segoe UI", "Tahoma";
+	letter-spacing: 1px;
 }
 
 div.dst {
@@ -739,8 +738,7 @@ div.crumbs ul {
 div.crumbs li {
     font-size: 10px;
     padding: 0;
-    margin: 0.5em 1px 0.5em 0;
-    border-top: 1px #96a2b0 dotted;
+    margin: 1em 5px 1em 5px;
 }
 
 div.crumbs a {
@@ -2790,4 +2788,33 @@ li.pad3NF ul{
 	margin-left: 20px;
 	margin-right: 20px;
 	letter-spacing: 1px;	
+}
+
+#not_dsbc{
+	font-size: 9px;
+	font-family: "Segoe UI";
+	letter-spacing: 1px;
+	margin-left: 5px;
+}
+#is_dsbc{
+	font-size: 9px;
+	font-family: "Segoe UI";
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+
+#dspurl{
+	width:110px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.crumbs p{
+	font-family: "Segoe UI";
+	font-size: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	height: initial;
 }
