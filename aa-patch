@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Run the script to patch the aa-base.1.0.0
+# Run the script to patch the aa-base
 
 
 AA_PATH=/var/www/s2a
