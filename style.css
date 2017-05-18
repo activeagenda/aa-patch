@@ -2818,3 +2818,10 @@ li.pad3NF ul{
 	letter-spacing: 1px;
 	height: initial;
 }
+
+#chsrvcnf{
+	clear: both;
+	float: right;
+	margin-right: 10px;
+	font-size: 10px;
+}

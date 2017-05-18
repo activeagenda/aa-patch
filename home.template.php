@@ -82,7 +82,7 @@ setTimeStamp('template_rendering_startup');
 		<div id="navi_area"><?php echo $menuHTML; ?></div>
     <?php }
         if($User->IsAdmin){
-            echo '<div style="clear:both;"><a href="#" onclick="open(\'checkServer.php\', \'checkServer\', \'toolbar=0,width=600,height=600\');">'.gettext("Check server configuration").'</a></div>';
+            echo '<div id="chsrvcnf"><a href="#" onclick="open(\'checkServer.php\', \'checkServer\', \'toolbar=0,width=600,height=600\');">'.gettext("Check server configuration").'</a></div>';
         }
     ?>
     </div>
