@@ -167,6 +167,7 @@ cp s2a-apply-patches.php $AA_PATH/s2a-apply-patches.php
 cp s2a-build-theme.php $AA_PATH/s2a-build-theme.php
 cp s2a-check-uploads.php $AA_PATH/s2a-check-uploads.php
 cp s2a-import-data.php $AA_PATH/s2a-import-data.php
+cp s2a-install-db.php $AA_PATH/s2a-install-db.php
 cp anonedit.php $AA_PATH/active_agenda/web/anonedit.php
 cp s2a-build-graphs.php $AA_PATH/s2a-build-graphs.php
 cp open_new_window.gif $AA_PATH/active_agenda/web/themes/aa_theme/img/open_new_window.gif
@@ -230,3 +231,4 @@ cp go-first.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-first.png
 cp go-last.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-last.png
 cp go-next.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-next.png
 cp go-previous.png $AA_PATH/active_agenda/web/themes/aa_theme/img/go-previous.png
+cp frontend-admin.conf $AA_PATH/active_agenda/frontend-admin.conf
