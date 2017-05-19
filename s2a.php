@@ -60,17 +60,6 @@ $config['startat'] =
         'desc'    => 'Within the matched module IDs, skip all modules prior to the module ID specified here.',
         'default' => 'optional'
     );
-//START
-/**
-
-$config['listsource'] =
-    array('short'   => 'l',
-        'min'     => 0,
-        'max'     => 1,
-        'desc'    => 'Obsolete parameter, retained for backwards compatibility only. Does nothing anymore.',
-        'default' => 'db'
-    );
-**/
 $config['language'] =
     array('short'   => 'l',
         'min'     => 0,
@@ -85,7 +74,6 @@ $config['dbroot-password'] =
 		'default' => '',
         'desc'    => 'MySQL root password for operations requiering SUPER priviliages'
     );	
-//END
 $config['debug'] =
     array('short'   => 'd',
         'min'     => 0,
@@ -107,13 +95,6 @@ $config['cleartriggers'] =
         'desc'    => 'Removes all triggers before starting the generate procedure. Options: \'yes\', \'no\'',
         'default' => 'yes'
     );
-//Feauture dropped
-	/* $config['no-upgrade'] =
-    array('short'   => 'nu',
-        'min'     => 0,
-        'max'     => 0,
-        'desc'    => 'Skips the upgrade check.'
-    ); */
 $config['no-autogen'] =
     array('short'   => 'na',
         'min'     => 0,
@@ -141,6 +122,13 @@ $config['no-master-data-check'] =
         'desc'    => 'Whether to skip the verification that all master data modules contain some data.'
     );
 
+$config['initial-generation'] =
+    array('short'   => 'i',
+        'min'     => 0,
+        'max'     => 1,		
+        'default' => "true",
+        'desc'    => 'Whether it is an initial genration of the application, cleaning everything before'
+    );
 //handles command-line options and general setup
 include $script_location . '/lib/includes/cli-startup.php';
 
@@ -155,13 +143,11 @@ $NoAutogen           = $args->getValue('no-autogen');
 $NoMergeExport       = $args->getValue('no-merged-xml');
 $ExportMasterData    = $args->getValue('export-masterdata');
 $SkipMasterDataCheck = $args->getValue('no-master-data-check');
-//START
 $Language = $args->getValue('language');
 $dbrootPassword = $args->getValue('dbroot-password');
+$initial_generation = $args->getValue('initial-generation');
+
 global $Language;
-//END
-
-
 global $Project; //this is used globally by patches
 global $ExportMasterData;
 global $NoAutogen;
@@ -232,17 +218,21 @@ dbErrorCheck($dbh);
 saveLog('s2a starting at '.date('r')."\n", true);
 saveLog('arguments: ' . join($_SERVER['argv'], ' ')."\n");
 
+
+if($initial_generation){
+	print "s2a: removing old code in the directory ".GENERATED_PATH."\n";
+	rrmdir(GENERATED_PATH);
+	mkdir(GENERATED_PATH);
+	mkdir(GENERATED_PATH."/mod");	
+	copy(APP_FOLDER."/includes/mod_DataHandler.gen", GENERATED_PATH."/mod/mod_DataHandler.gen");
+}
+
 //Creating trigger file for s2a-generate-module.php
 $trigger_file = S2A_FOLDER.'/install/triggers.sql';
 if ( file_exists( $trigger_file ) ){
 	unlink( $trigger_file );
 }
 fclose( fopen($trigger_file, 'w') );
-
-//check patches
-/* if(!$NoUpgrade){
-    CheckPatches();
-} */
 
 //clears triggers if requested
 if($bClearTriggers){
@@ -1013,5 +1003,31 @@ function findDependedModule($errorMessage)
         }
     }
     return false; //unsuccessful in finding a depended-on module
+}
+
+function rrmdir($dir)
+{
+    if (is_dir($dir)) // ensures that we actually have a directory
+    {
+        $objects = scandir($dir); // gets all files and folders inside
+        foreach ($objects as $object)
+        {
+            if ($object != '.' && $object != '..')
+            {
+                if (is_dir($dir . '/' . $object))
+                {
+                    // if we find a directory, do a recursive call
+                    rrmdir($dir . '/' . $object);
+                }
+                else
+                {
+                    // if we find a file, simply delete it
+                    unlink($dir . '/' . $object);
+                }
+            }
+        }
+        // the original directory is now empty, so delete it
+        rmdir($dir);
+    }
 }
 ?>
