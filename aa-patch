@@ -68,6 +68,7 @@ cp EditGridRPC.php $AA_PATH/active_agenda/web/rpc/EditGridRPC.php
 cp search.class.php $AA_PATH/lib/classes/search.class.php
 cp data_handler.class.php $AA_PATH/lib/classes/data_handler.class.php
 cp aa-sandbox $AA_PATH/util/aa-sandbox
+cp aa-install $AA_PATH/util/aa-install
 cp ViewModel.php $AA_PATH/lib/templates/ViewModel.php
 cp EditModel.php $AA_PATH/lib/templates/EditModel.php
 cp frames_popup.php $AA_PATH/active_agenda/web/frames_popup.php

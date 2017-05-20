@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# Active Agenda framework installation script
+# Script commandline input arguments
+# $1 localization like pl_PL
+# $2 database root password like "swords"
+
+AA_PATH=/var/www/s2a 
+
+if [ -z "$1" ] && [ -z "$2" ]; 	
+then 
+	echo "Missing script input parameters: localization and/or database root password"
+	exit
+fi
+echo " "
+echo "==="
+echo "=== START of the Active Agenda framework installation procedure"
+echo "==="
+echo " "
+# Initialize the database: "activeagenda", if any exists already drop and initialize it again
+php $AA_PATH/s2a-install-db.php -rp $2
+sleep 2
+
+# Cleanup old genrated code. Make the initial run, it won't generate all modules due to the imperfect generator
+php $AA_PATH/s2a.php -i -y -l $1 -rp $2
+sleep 2
+
+# Make a second run, now everything should be all on board"
+php $AA_PATH/s2a.php -t -y -l $1 -rp $2
+sleep 2
+
+# Verify if something has been skipped
+
+php $AA_PATH/s2a.php -y -l $1 -rp $2
+sleep 2
+
+# Import the minimal set of master data"
+
+$AA_PATH/util/aa-postinstall
+sleep 2
+
+# Initialize the very first admin configured in the file frontend-admin.conf"
+sleep 2
+php $AA_PATH/s2a-install-db.php -u
+
+echo " "
+echo "==="
+echo "=== END of the Active Agenda framework installation procedure"
+echo "==="
+echo " "
