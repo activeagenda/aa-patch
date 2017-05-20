@@ -41,17 +41,20 @@ DEFINE('EXEC_STATE', 2);
 
 $project = 'active_agenda';   //folder location
 $add_user_only = false;
-if(2 <= ($_SERVER['argc'])){
-    if('-u' == substr($_SERVER['argv'][1], 0, 2)){
-        $add_user_only = true;
-    } else {
-        if(3 <= ($_SERVER['argc'])){
-            $project = $_SERVER['argv'][2];
-        } else {
-            $project = $_SERVER['argv'][1];
-        }
-    }
+$root_pwf_exists = false;
+
+if($_SERVER['argc'] > 1){
+	if('-u' == substr($_SERVER['argv'][1], 0, 2)){
+		$add_user_only = true;
+	}elseif('-rp' == substr($_SERVER['argv'][1], 0, 3)){
+		$root_pwf_exists = true;
+		$root_pwd = $_SERVER['argv'][2];
+	}else{
+		$project = $_SERVER['argv'][1];
+	}
 }
+
+
 
 //assumes we're in the 's2a' folder 
 $site_folder = realpath(dirname($_SERVER['SCRIPT_FILENAME']).'');
@@ -133,16 +136,20 @@ if('root' == GEN_DB_USER){
 
 
 
-if(!prompt("\nIn order to install the Active Agenda database, the MySQL root password is required. Continue?")){
-    die("$debug_prefix Database install was canceled\n");
-}
 
-$root_pwd = textPrompt("Please type the MySQL root password.");
+if(!$root_pwf_exists){
+	if(!prompt("\nIn order to install the Active Agenda database, the MySQL root password is required. Continue?")){
+		die("$debug_prefix Database install was canceled\n");
+	}
+	$root_pwd = textPrompt("Please type the MySQL root password.");
+}
 
 //because the root password could be set with the "new password", and PHP 4 does not support it, we will have to do this from the command line
 
 $sql = "SHOW DATABASES;";
 $result = shellQuery($sql);
+print "\n\n";
+
 $existing_dbs = explode("\n", $result);
 unset($existing_dbs[0]); //first line is the column header
 foreach($existing_dbs as $existing_db){
@@ -191,7 +198,7 @@ print "\n\n";
 
 $emptySQLPath = S2A_FOLDER.'/install/empty.sql';
 if(!file_exists($emptySQLPath)){
-    die("The file $emptySQLPath, which allows installing the special database tables, is not existing.\n
+    die("The file $emptySQLPath, which allows preinstalling special database tables, is not existing.\n
 The database has been created, but without tables.\n");
 }
 

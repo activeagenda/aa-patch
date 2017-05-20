@@ -125,9 +125,16 @@ $config['no-master-data-check'] =
 $config['initial-generation'] =
     array('short'   => 'i',
         'min'     => 0,
-        'max'     => 1,		
+        'max'     => 0,		
         'default' => "true",
         'desc'    => 'Whether it is an initial genration of the application, cleaning everything before'
+    );
+$config['new-modules-yes'] =
+    array('short'   => 'y',
+        'min'     => 0,
+        'max'     => 0,		
+        'default' => "yes",
+        'desc'    => 'Whether to install new modules without asking the user'
     );
 //handles command-line options and general setup
 include $script_location . '/lib/includes/cli-startup.php';
@@ -146,6 +153,7 @@ $SkipMasterDataCheck = $args->getValue('no-master-data-check');
 $Language = $args->getValue('language');
 $dbrootPassword = $args->getValue('dbroot-password');
 $initial_generation = $args->getValue('initial-generation');
+$new_modules_yes = $args->getValue('new-modules-yes');
 
 global $Language;
 global $Project; //this is used globally by patches
@@ -378,7 +386,7 @@ if(!empty($file_ParseList)){
         );
         print "\n";
 
-        if(prompt("The list above contains new module definitions. Would you like to install them?")){
+        if($new_modules_yes or prompt("The list above contains new module definitions. Would you like to install them?")){
             $newModuleList = array_flip($modulesNotInDB); //makes the moduleIDs into index keys once again
             foreach($newModuleList as $newModuleID => $dummyValue){
                 $newModuleList[$newModuleID] = null;
